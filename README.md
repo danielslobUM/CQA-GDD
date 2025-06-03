@@ -1,16 +1,16 @@
-# My Python Scripts
+# Scripts required for continuous quality assurance of deep learning segmentaions in radiotherapy.
 
-Welcome! This repository contains a collection of useful Python scripts I've written. These scripts cover a variety of tasks, from automation to data processing.
+Welcome! This repository contains a collection of Python scripts used in "Results of continuous quality assurance for deep learning segmentations in radiotherapy making use of statistical process control for automatic performance monitoring" by Van Acht et al. 
+These scripts cover a variety of tasks.
 
 ## 📂 Scripts
 
 | File Name       | Description                          |
-|----------------|--------------------------------------|
-| `script1.py`    | Short description of what it does    |
+|-----------------|--------------------------------------|
+| `CQA_DLS_GUI`   | GUI that lets you score data, create plots, make datasheets and detect outliers and trend shifts.|
 | `script2.py`    | Another short description            |
 | `utils.py`      | Utility functions used in scripts    |
 
-> 📝 Replace these with the actual names and purposes of your scripts.
 
 ## 🛠️ Requirements
 
