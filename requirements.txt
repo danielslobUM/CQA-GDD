@@ -1,0 +1,5 @@
+scipy==1.10.1
+numpy==1.23.5
+matplotlib==3.7.5
+pydicom==2.4.4
+surface-distance==0.1
