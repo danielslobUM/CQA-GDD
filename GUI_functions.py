@@ -649,7 +649,7 @@ def get_data(data_path='',start_date=20240828,end_date=21000101):
                             pids[index].append(patient)
     return ROIs,dates,vdsc,sdsc,hd95,apl,pids
 
-def nelson_detection(data_path='', limits={},start_datum=20250101,value1=2.5,value2=9,value3=6,N_min=10):
+def nelson_detection(data_path='', limits={},start_date=20250101,value1=2.5,value2=9,value3=6,N_min=10):
     """
     Function that performs the first three adapted Nelson Rules:
     1. If 3 out of 4 metrics are outside of the control limits, it is an outlier.
@@ -659,7 +659,7 @@ def nelson_detection(data_path='', limits={},start_datum=20250101,value1=2.5,val
     Input:
     - data_path: string to the data folder
     - limits: dictionary that contains all the control limits
-    - start_datum: date where to start the analysis from
+    - start_date: date where to start the analysis from
     - value1: float that corresponds to the voting system of rule 1
     - value2: integer that corresponds to the amount of consecutive points for rule 2
     - value3: integer that corresponds to the amount of conescutive points for rule 3
@@ -671,7 +671,7 @@ def nelson_detection(data_path='', limits={},start_datum=20250101,value1=2.5,val
     - Rule3: List with trend drifts according to rule 3
     """
     #Get the data
-    rois,dates,vdsc,sdsc,hd95,apl,pids = get_data(data_path=data_path,start_date=start_datum)
+    rois,dates,vdsc,sdsc,hd95,apl,pids = get_data(data_path=data_path,start_date=start_date)
 
     #perform rule 1
     list = []

@@ -40,10 +40,11 @@ class MyGUI():
         self.exclusion_path = 'Exclusion_ROIs.csv'
         self.N_min = 10
         self.xdim, self.ydim, self.zdim = 1.17, 1.17, 3.0
+        self.value1,self.value2,self.value3 = 2.5, 9 , 6
  
         #START OF GUI
         self.root = root
-        self.root.title("Background QA")
+        self.root.title("Continuous QA - DLS")
 
         # Associate the close event with the handler method
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
@@ -51,12 +52,12 @@ class MyGUI():
         # Create input labels and entry widgets
         self.label1 = tk.Label(root, text="Start date:")
         self.entry1 = tk.Entry(root)
-        self.entry1.insert(0, "28-08-2024")  # Set default value for Start datum
+        self.entry1.insert(0, "28-08-2024")  # Set default value for Start date
         
         self.label2 = tk.Label(root, text="End date:")
         self.entry2 = tk.Entry(root)
         current_date = datetime.now().strftime("%d-%m-%Y")  # Get current date in DD-MM-YYYY format
-        self.entry2.insert(0, current_date)  # Set default value for Eind datum
+        self.entry2.insert(0, current_date)  # Set default value for Eind date
         
         # Create the "Krijg data" button
         self.button = tk.Button(root, text="Get data", command=self.get_data)
@@ -75,7 +76,7 @@ class MyGUI():
         self.status_label.grid(row=3, columnspan=2, padx=1, pady=1)
 
         # Create a label for the ROI selection
-        self.roi_label = tk.Label(self.root, text="Select ROIs for plot")
+        self.roi_label = tk.Label(self.root, text="Select ROIs")
 
         # Create a list to store selected ROIs
         self.selected_rois = []
@@ -189,7 +190,7 @@ class MyGUI():
         with open(self.control_limits_file , 'r') as file:
             control_limits = json.load(file)
 
-        Rule1, Rule2,Rule3 = nelson_detection(data_path=self.data_path,limits=control_limits,start_datum=20240828,value1=2.5,value2=9,value3=6,N_min=self.N_min)
+        Rule1, Rule2,Rule3 = nelson_detection(data_path=self.data_path,limits=control_limits,start_date=20240828,value1=self.value1,value2=self.value2,value3=self.value3,N_min=self.N_min)
 
         csv_path1 = os.path.join(self.save_path,'Nelson_Rule_1.csv')  # Replace with the actual path to your CSV file
         update_csv_1(csv_path1, Rule1)
