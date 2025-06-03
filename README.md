@@ -19,10 +19,19 @@ With `SPC_control_limits.py` the control limits can be determined required for s
 
 ### Using the GUI
 
-With `CQA_DLS_GUI.py` a GUI will help scoring your data, visualise it and even perform monitoring using Nelson rules
+With `CQA_DLS_GUI.py` a GUI will help scoring your data, visualise it and even perform monitoring using Nelson rules. Upon running the script the GUI below will pop up.
 
 ![Appearance of GUI when `CQA_DLS_GUI.py` is run](GUI.PNG)
 
+In this GUI:
+- The start date is set at 28-08-2024. This can be changed in the script to the data you first start collecting data. The date mentioned here will be used to include data for plotting, the excel, and the nelson analysis.
+- The end date is set at the date the script is run. The date mentioned here will be used to include data for plotting, the excel, and the nelson analysis.
+- Get data: uses `calculator_functions.py` to score all unscored patients between the set start and end date.
+- Select ROIs for plot: lets you select ROIs for plotting. Multiple ROIs can selected at once.
+- Plot selected: to plot the VDSC, SDSC, HD95 and APL of between the start and end date. In the legend for each ROI selected the mean and standard deviation are given for that metric, together with the amount of times the ROI was present and the percentage of times the ROI was not adjusted at all. If only 1 ROI is selected the SPC plot will be given. This used the control limits and target to give a clear visualisation of the trend. This requires the control_limits.json file.
+- Save plot lets you save the last plot.
+- Create excel creates an excel file with a summary of the selected ROIs between the start and end date. It gives the median, iqr and min max values with the amount of times the ROI is present and percentage it is not adjusted.
+- Nelson analysis lets you perform monitoring on all data. It uses the calculated control limits to use the three adapted Nelson rules mentioned in Van Acht et al. It will create (or update) 3 excel files in the save folder.
 
 ## 💻 Requirements
 
