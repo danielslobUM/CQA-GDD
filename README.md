@@ -5,7 +5,7 @@ These scripts cover a variety of tasks.
 
 ## Disclaimer
 
-This script was written and designed in a specific institute. Despite it being open source and designed to function in other institutes as well, when deploying it in another institute is should be carefully validated before it should be implemented in a clinical workflow. No responsibility can be given to the authors of the script.
+This script was written and designed in a specific institute. Despite it being open source and designed to function in other institutes as well, when deploying it in another institute it should be carefully validated before it should be implemented in a clinical workflow. No responsibility can be given to the authors of the script.
 
 ## 📂 Scripts
 
