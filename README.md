@@ -7,9 +7,10 @@ These scripts cover a variety of tasks.
 
 | File Name       | Description                          |
 |-----------------|--------------------------------------|
-| `CQA_DLS_GUI`   | GUI that lets you score data, create plots, make datasheets and detect outliers and trend shifts.|
-| `script2.py`    | Another short description            |
-| `utils.py`      | Utility functions used in scripts    |
+| `CQA_DLS_GUI.py`   | GUI that lets you score data, create plots, make datasheets and detect outliers and trend shifts.|
+| `GUI_functions.py`    | Functions required for all functionalities in the GUI            |
+| `caculator_functions.py`      | Functions required to get scores from RTstruct.dcm files, integrated in GUI   |
+| `SPC_control_limits.py` | Script that determines the control limits based on SPC. Required to perfrom automatic monitoring, not for visualisation in GUI | 
 
 
 ## 🛠️ Requirements
