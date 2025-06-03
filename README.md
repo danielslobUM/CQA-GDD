@@ -21,7 +21,7 @@ With `SPC_control_limits.py` the control limits can be determined required for s
 
 With `CQA_DLS_GUI.py` a GUI will help scoring your data, visualise it and even perform monitoring using Nelson rules
 
-![Appearance of GUI when `CQA_DLS_GUI.py` is run](GUI.png)
+![Appearance of GUI when `CQA_DLS_GUI.py` is run](GUI.PNG)
 
 
 ## 💻 Requirements
