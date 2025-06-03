@@ -19,5 +19,5 @@ Welcome! This repository contains a collection of useful Python scripts I've wri
 
 ```bash
 pip install -r requirements.txt
-
+```
 > ⚠️ This project was developed and tested with **Python 3.8.7**. Using other versions might work but is not guaranteed.
