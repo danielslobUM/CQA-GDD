@@ -12,11 +12,12 @@ Welcome! This repository contains a collection of useful Python scripts I've wri
 
 > 📝 Replace these with the actual names and purposes of your scripts.
 
-## 💻 Requirements
+## 🛠️ Requirements
 
-These scripts require Python 3.6 or higher.
-
-Install dependencies (if any):
+- Python 3.8.7
+- The following Python packages (exact versions recommended):
 
 ```bash
 pip install -r requirements.txt
+
+> ⚠️ This project was developed and tested with **Python 3.8.7**. Using other versions might work but is not guaranteed.
