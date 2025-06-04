@@ -77,3 +77,6 @@ To make the scripts work a few adjustments are required in the `CQA_DLS_GUI.py` 
 - self.xdim, self.ydim, self.zdim: the dimension of a voxel of the CT scan. Since we are not exporting CT scans we can not automatically get these values. Put them in manually.
 - self.value1, self.value2, self.value3: values used by the adapted Nelson rules to detect outliers, trend shifts and trend drifts. Further explained in Van Acht et al.
 
+## Contact
+
+If you have any further questions or errors with the code, do not hesitate to contact me: niels.v.acht@catharinaziekenhuis.nl
