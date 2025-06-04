@@ -21,7 +21,7 @@ import csv
 from csv import writer
 from datetime import datetime, timedelta
 import json
-from calculater_functions import remove_line, is_valid_date, get_dates_between
+from calculator_functions import remove_line, is_valid_date, get_dates_between
 
 
 def check_day_folder_format(day_string=''):
