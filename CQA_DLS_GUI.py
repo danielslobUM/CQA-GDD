@@ -18,7 +18,7 @@ import tkinter as tk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 from tkinter import filedialog
-from calculater_functions import *
+from calculator_functions import *
 from GUI_functions import *
 
 
