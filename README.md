@@ -3,7 +3,6 @@
 Welcome! This repository contains a collection of Python scripts used in "Results of continuous quality assurance for deep learning segmentations in radiotherapy making use of statistical process control for automatic performance monitoring" by Van Acht et al. 
 These scripts cover a variety of tasks.
 
-Test2
 ## Disclaimer
 
 This script was written and designed in a specific institute. Despite it being open source and designed to function in other institutes as well, when deploying it in another institute it should be carefully validated before it gets implemented in a clinical workflow. No responsibility can be given to the authors of the script.
